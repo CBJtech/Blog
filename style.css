@@ -1,0 +1,624 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #000;
+    background-image: linear-gradient(#000, #0B1320, #000);
+    color: white;
+    animation-name: body;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+
+ }
+ @keyframes body{
+  0%{
+    opacity: 0;
+  } 
+    50%{
+      opacity: 0.5;
+    }
+  100%{
+    opacity: 1;
+  }
+ }
+ html{
+  scroll-behavior: smooth;
+ }
+.home_nav_container{
+    width: 100%;
+
+}
+#exception_to_objectCover{
+  object-fit: none;
+}
+.design{
+  width: 2rem;
+  max-width: 3rem;
+  min-width: 2rem;
+  stroke-width: 2rem;
+  float: right;
+  height: 4rem;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 0.3rem;
+  border-collapse: 2rem;
+  background-color: crimson;
+  animation-name: design;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes design {
+  from{
+    opacity: 0.1;
+    background-color: red;
+  }
+  to{
+    opacity: 1;
+    background-color: crimson;
+  }
+}
+.hello{
+  width: 80%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 9rem;
+  text-align: center;
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.hello a{
+  text-decoration: none;
+  color: aliceblue;
+  padding: 0.5rem 0.6rem;
+  width: 9rem;
+  background-color: crimson;
+  top: 1rem;
+  text-align: center;
+  font-size: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: 0.6s;
+}
+.hello a:hover{
+  color: crimson;
+  background-color: white;
+  border-radius: 10px;
+  scale: 0.96;
+}
+.portfolio{
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 0.9rem;
+}
+.portfolio h2{
+  text-align: center;
+  margin-top: 1rem;
+  border-right: 5px solid crimson;
+  font-size: 30px;
+}
+#no_border{
+  border-right: 0px;
+}
+ .projects{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0.3rem;
+ }
+ .project1{
+  width: 30rem;
+  background-color: aliceblue;
+  padding: 0.7rem;
+  text-align: center;
+ }
+ 
+ .project1 img{
+  width: 80%;
+  height: 30rem;
+  object-fit: cover;
+  
+ }
+.nav{ 
+    width: 18%;
+    padding: 2rem;
+    background-color: #17202a;
+    color: white;
+    position: fixed;
+    transform: rotateX('60');
+    transition: transform 0.5s ease-in;
+
+}
+footer{
+  padding: 0.3rem;
+  text-align: center;
+  background-color: #D5D8DC;
+}
+.last{
+  width: 100%;
+  padding: 3rem;
+  padding-bottom: 0;
+  font-size: 20px;
+  background-color: #D5D8DC;
+
+}
+.main-contact-div{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.in_touch{
+  width: 100%;
+  padding: 0.9rem;
+}
+.icon1{
+  font-size: 30px;
+}
+.last .inTouch{
+  text-align: center;
+  color: crimson;
+  font-size: 20px;
+}
+
+.email_address{
+  word-break: break-all;
+}
+
+
+@keyframes circle {
+  from{
+    opacity: 1;
+    border-top-left-radius: 1rem;
+  }
+  
+  to{
+    opacity: 0;
+  }
+}
+
+.last h1 {
+  text-align: center;
+}
+.circle{
+  width: 10rem;
+  height: 10rem;
+  text-align: center;
+  bleed: 3rem;
+  transform: rotate(-35deg) scaleX(.55) translate(39px, 4.5px);
+  border-radius: 0 50px 50px 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: 5rem;
+  background-image: linear-gradient(blue, black,) crimson;
+}
+.main-contact-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.circle p{
+  font-size: 230px;
+  opacity: 0.3;
+  color: crimson;
+  font-style: italic;
+  text-align: center;
+
+}
+footer h5{
+  font-size: 18px;
+  margin-top: 1rem;
+}
+.nav a{
+  transition: 0.6s;
+}
+.nav a:hover{
+  color: crimson;
+ 
+}
+.technical_content{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0.8rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.making_portfolio_heading_bigger{
+  font-size: 40px;
+}
+.technical1{
+  width: 18rem;
+  padding: 0.6rem;
+  background-color: #17202a;
+  text-align: center;
+  transition: 0.5s;
+}
+.technical1:hover{
+  cursor: pointer;
+  background-color: crimson;
+  color: #fff;
+  border-radius: 10px;
+  outline: 2px;
+  z-index: 999;
+  scale: 0.95;
+}
+.technical1:active{
+  scale: 0.95;
+}
+#design{
+  float: left;
+  left: 0;
+  rotate: 45;
+}
+.technical1 h2{
+  text-align: center;
+  border-left: 2px solid crimson;
+}
+.technical1 img{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nav h2{
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+
+}
+
+.tech{
+    color: crimson;
+}
+.nav p{
+    text-align: center;
+}
+
+.nav .ul1{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem ;
+    margin-top: 2rem;
+    transition: transform 0.5s ease-in;
+
+}
+
+.nav a{
+    text-align: center;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.nav h4{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.9rem;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+
+
+.socials li{
+    list-style: none;
+    text-align: center;
+    color: blue;
+    text-align: center;
+    font-size: 30px;
+}
+.socials a{
+  color: blue;
+}
+.crimson{
+  width: 10px;
+  height: 60px;
+  background-color: crimson;
+}
+.project1 p, a{
+  font-size: 20px;
+}
+.name-email{
+  width: 90%;
+  padding: 0.6rem;
+  border-radius: 10px;
+  border: 1px solid #17202a;
+  margin-top: 0.3rem;
+  font-size: 20px;
+ }
+.subject{
+  border-radius: 10px;
+  border: 1px solid #17202a;
+  width: 90%;
+  padding: 0.9rem;
+  font-size: 20px;
+  margin-top: 0.5rem;
+}
+.Message{
+  border-radius: 10px;
+  border: 1px solid #17202a;
+  width: 90%;
+  padding: 1rem ;
+  font-size: 20px;
+  height: 10rem;
+  margin-top: 0.5rem;
+
+}
+input{
+  outline: none;
+  border-bottom: 2px solid crimson;
+}
+
+.skills{
+  background-color: black;
+  width: 100%;
+  color: white;
+  padding: 2rem;
+  font-size: 20px;
+}
+input[type = submit]{
+  margin-top: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  border: crimson;
+  background-color: crimson;
+  color: white; 
+  font-size: 20px;
+  width: 10rem;
+  border-radius: 10px;
+  transition: 0.6s;
+  cursor: pointer;
+}
+input[type = submit]:hover{
+  border: 1px solid crimson;
+  background-color: #D5D8DC;
+  color: crimson;
+}
+.skills h1{
+  border-bottom: 2px solid crimson;
+  width: 10rem;
+}
+
+.skillsCombine{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+
+.socials a{
+    text-decoration: none;
+    color: white;
+    background-color: crimson;
+    text-align: center;
+}
+
+.nav h5{
+    text-align: center;
+}
+.home{
+  width: 100%;
+  background-color: black   ;
+   background-image: linear-gradient(#000, #0B1320, #000);
+   height: 80vh; 
+   text-align: center;
+   top: 2rem;
+   color: white;
+
+}
+.home h2{
+    text-align: center  ;
+}
+
+.myImg img{
+  width: 20rem;
+  height: 30rem;
+  object-fit: cover;
+}
+
+.aboutMe{
+  text-align: center;
+}
+
+.container2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 20px;
+  gap: 1rem;
+  background-color: white;
+  padding: 3rem;
+  color: #000;
+}
+.txt {
+  width: 82%;
+  height: 10rem;
+  background-color: green;
+}
+
+.info{
+  width: 80%;
+  text-rendering: geometricPrecision;
+}
+.info a{
+  text-decoration: none;
+  color: crimson;
+}
+.info .p{
+  text-align: center;
+}
+.info i{
+  color: crimson;
+  background-color: white;
+  font-size: 3rem;
+}
+
+/* Hamburger starts here */
+
+.hamburger-label {
+    width: 70px;
+    height: 58px;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .hamburger-label div {
+    width: 70px;
+    height: 6px;
+    background-color: #fff;
+    position: absolute;
+    }
+  
+  .line1 {
+    transition: all .3s;
+  }
+  
+  .line2 {
+    margin: 18px 0 0 0;
+    transition: 0.3s;
+  }
+  
+  .line3 {
+    margin: 36px 0 0 0;
+    transition: 0.3s;
+  }
+  .label-check {
+    display: none;
+  }
+  
+  #label-check:checked + .hamburger-label .line1 {
+    transform: rotate(35deg) scaleX(.55) translate(39px, -4.5px);
+    border-radius: 50px 50px 50px 0;
+  }
+  
+  #label-check:checked + .hamburger-label .line3 {
+    transform: rotate(-35deg) scaleX(.55) translate(39px, 4.5px);
+    border-radius: 0 50px 50px 50px;
+  }
+  
+  #label-check:checked + .hamburger-label .line2 {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 45px;
+  }
+  
+/* hamburger stops here */
+
+
+
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+    .nav{
+        width: 60%;
+        display: none;
+        transition: 0.6s;
+        transform: translateZ(100%);
+    }
+    .circle{
+      display: none;
+    }
+    form{
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 100%;
+    }
+    .in_touch:nth-child(2){
+      width: 50%;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+ 
+    #name-email{
+      margin-top: 0.5rem;
+    }
+.technical1{
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.last{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+}
+    .myImg img{
+      width: 94%;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    
+    .info{
+      width: 100%;
+    }
+  .container{
+    display: block ;
+  }
+  
+  .container2{
+    justify-content: center;
+    background-color: white;
+    position: relative;
+  }
+  .hello{
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        display: none;
+    }
+    .nav{
+      top: 0;
+    }
+    .hello{
+      margin-left: 10rem;
+      right: 0;
+    }
+    .container2{
+      flex-wrap: nowrap;
+      float: left;
+      left: 0;
+    }
+    .projects{
+      gap: 5rem;
+    }
+    .info{
+      margin-top: 2rem;
+      text-align: left;
+    }
+    
+}
+
